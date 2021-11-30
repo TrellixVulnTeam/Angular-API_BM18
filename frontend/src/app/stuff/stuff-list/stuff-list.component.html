@@ -1,0 +1,28 @@
+<!--Afffichage - Page - Mes produit-->
+
+<mat-spinner *ngIf="loading"></mat-spinner>
+
+<!--Affichage - Rien à vendre-->
+<!--Affichage si l'utilisateur n'a rien à vendre-->
+<p class="text-center" *ngIf="stuff.length <= 0 && !loading">Rien à vendre !</p>
+
+<!--Affichage d'un produit sous forme de card-->
+<!--Affichage si l'utilisateur a des produits à vendre-->
+<div class="stuff-grid" *ngIf="stuff.length >= 0">
+
+  <!--Affichage d'un produit sous forme de card-->
+  <div class="thing-pane" *ngFor="let thing of stuff" [ngClass]="{'open': thing._id === chosenId}"
+    [ngStyle]="{'background-image': 'url(' + thing.imageUrl + ')'}" (click)="onProductClicked(thing._id)">
+    <div class="thing-info">
+
+      <!--Affichage titre d'un produit-->
+      <h3>
+        {{ thing.title }}
+      </h3>
+
+      <!--Affichage prix d'un produit-->
+      <h5>{{ thing.price / 100 | currency:'EUR' }}</h5>
+      
+    </div>
+  </div>
+</div>

@@ -1,0 +1,43 @@
+<!--Affichage - Page Modification d'un utlisateur-->
+<mat-spinner *ngIf="loading"></mat-spinner>
+
+<div *ngIf="!loading" class="col-sm-6 offset-sm-3 mt-2">
+
+  <!--Formulaire-->
+  <form [formGroup]="userForm">
+
+    <!--Champs Prénom-->
+    <div class="form-group">
+      <label for="firstname">Prénom</label>
+      <input type="text" placeholder="Quel sera votre nouveau prénom ?" id="firstname" formControlName="firstname"
+        class="form-control">
+    </div>
+
+    <!--Champs Nom-->
+    <div class="form-group">
+      <label for="lastname">Nom</label>
+      <input type="text" placeholder="Quel sera votre nouveau nom ?" id="lastname" formControlName="lastname"
+        class="form-control">
+    </div>
+
+    <!--Champs Email-->
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input type="text" placeholder="Quel sera votre nouvel email ?" id="email" formControlName="email"
+        class="form-control">
+    </div>
+
+    <!--Champs Mot de passe-->
+    <div class="form-group">
+      <label for="pasword">Mot de passe</label>
+      <input type="text" placeholder="Quel sera votre nouveau mot de passe ?" class="form-control">
+    </div>
+
+    <!--Boutton Valider-->
+    <!--Affichage du boutton que si le condition de format du formulaire sont remplis-->
+    <button class="btn btn-success" (click)="onSubmit()" [disabled]="userForm.invalid">Valider</button>
+
+    <!--Affichage d'erreur-->
+    <p class="alert-danger" *ngIf="errorMessage">{{ errorMessage }}</p>
+  </form>
+</div>

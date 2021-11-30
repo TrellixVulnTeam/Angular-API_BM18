@@ -1,0 +1,75 @@
+<body>
+  <nav>
+    <!--Barre de navigation-->
+    <ul>
+
+      <!--Affichage Gauche - Bar de navigation-->
+      <div class="floatLeft">
+
+        <!--Redirection - Page - Produit-->
+        <li *ngIf="isAuth">
+          <a routerLink="/body/all-stuff" routerLinkActive="active">Produit</a>
+        </li>
+
+        <!--Redirection - Page - Vendre-->
+        <li *ngIf="isAuth">
+          <a routerLink="/body/new-thing" routerLinkActive="active">Vendre</a>
+        </li>
+
+        <!--Redirection-->
+        <li class="déroulant" *ngIf="isAuth">
+          <a>Compte</a>
+          <ul class="sous">
+
+            <!--Redirection - Page - Mon informations-->
+            <li> <a routerLink="/user/account" routerLinkActive="active">Mes informations</a></li>
+
+            <!--Redirection - Page - Mon produits-->
+            <li> <a routerLink="/user/all-stuff" routerLinkActive="active">Mes produits</a></li>
+          </ul>
+        </li>
+
+        <!--Redirection - Page - Connexion-->
+        <li *ngIf="!isAuth">
+          <a routerLink="/body/login" routerLinkActive="active">Connexion</a>
+        </li>
+
+        <!--Redirection - Page - Déconnexion-->
+        <li *ngIf="isAuth">
+          <a style="cursor: pointer; color: white;" (click)="onLogout()">Déconnexion</a>
+        </li>
+
+        <!--Redirection - Page - Inscription-->
+        <li *ngIf="!isAuth">
+          <a routerLink="/body/register" routerLinkActive="active">Inscription</a>
+        </li>
+
+      </div>
+
+      <!--Affichage - Acceuil-->
+      <div class="floatRight">
+
+        <!--Redirection Droite- Page - Accueil-->
+        <li id="droite">
+          <a style="cursor:pointer; color: white; float:right;" (click)="onBackToParts()">Accueil</a>
+        </li>
+
+      </div>
+    </ul>
+  </nav>
+
+  <!-- Affichage d'un bandeau pour Mes produits-->
+  <div class="hero-image jumbotron" *ngIf="mode === 'list'">
+    <h2 class="hero-text">
+      PRODUITS POLYCOMMERCE
+    </h2>
+  </div>
+
+  <!-- Affichage d'un bandeau pour Produit-->
+  <div class="hero-image jumbotron" *ngIf="mode === 'stuff-user'">
+    <h2 class="hero-text">
+      MES PRODUITS
+    </h2>
+  </div>
+
+</body>

@@ -1,0 +1,32 @@
+  
+  //Style - Bandeau
+  
+  .jumbotron {
+    background-image:
+      url('/assets/_image/home/2.jpg');
+    background-size: cover;
+    min-height     : 380px;
+    margin-bottom  : 0%;
+    border-radius  : 0%;
+  }
+
+  //Style - Barre de navigation
+  
+  header {
+    display         : flex;
+    align-items     : center;
+    background-color: #212121;
+    color           : white;
+    padding         : 0.1rem 0.5%;
+  }
+
+  //Style - Body
+  
+  body {
+    background-color: #212121;
+  }
+
+  .row {
+    padding: 50px 0 !important;
+
+  }

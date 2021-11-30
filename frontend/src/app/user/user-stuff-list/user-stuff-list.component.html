@@ -1,0 +1,25 @@
+<!--Page Mes produits-->
+<mat-spinner *ngIf="loading"></mat-spinner>
+
+<!--Affichage de Rien à vendre si aucun produits n'a été proposé l'utilisateur-->
+<p class="text-center" *ngIf="things.length <= 0 && !loading">Rien à vendre !</p>
+
+<!--Affichage de la liste de produits qui ont été proposés par l'utilisateur-->
+<div class="stuff-grid" *ngIf=" things.length >= 0">
+
+  <!--Affichage de la liste de produits de l'utilisateur connecté-->
+  <div class="thing-pane" *ngFor="let thing of things" [ngClass]="{'open': thing._id === chosenId}"
+    [ngStyle]="{'background-image': 'url(' + thing.imageUrl + ')'}" (click)="onProductClicked(thing._id)">
+    <div class="thing-info">
+
+      <!--Page Titre-->
+      <h3>
+        {{ thing.title }}
+      </h3>
+
+      <!--Affichage Prix-->
+      <h5>{{ thing.price / 100 | currency:'EUR' }}</h5>
+    
+    </div>
+  </div>
+</div>

@@ -1,0 +1,56 @@
+<!--Page Fiche produit-->
+<mat-spinner *ngIf="loading"></mat-spinner>
+
+<div *ngIf="!loading" class="col-sm-6 offset-sm-3 mt-2">
+
+  <!--Boutton Retour-->
+  <button class="btn btn-link" (click)="onGoBack()">Retour</button>
+
+  <!--Affichage Champs Proposition d'un prix actuellemnt-->
+  <div class="single-thing-pane">
+    <img [src]="thing?.imageUrl" alt="">
+    <div class="single-thing-info">
+
+      <!--Affichage du titre-->
+      <h1>{{ thing?.title }}</h1>
+
+      <!--Affichage du prix-->
+      <h2 class="single-thing-price">{{ thing?.price / 100 | currency:'EUR' }}</h2>
+
+      <!--Affichage de la description-->
+      <p>{{ thing?.description }}</p>
+
+      <!--Boutton Modifier-->
+      <!--Il est impossible de modifier l'annonce si voue n'etes pas le créateur de celle-ci-->
+      <button class="btn btn-success m-1" (click)="onModify()" [disabled]="userId !== thing?.userId">Modifier</button>
+
+      <!--Boutton Supprimer-->
+      <!--Il est impossible de supprimer l'annonce si voue n'etes pas le créateur de celle-ci-->
+      <button type=button class="btn btn-danger m-1" (click)="clickMethod()"
+        [disabled]="userId !== thing?.userId">Supprimer</button><br>
+      <br>
+
+      <!--Affichage de la proposition d'un prix-->
+      <!--Si le prix affiché est supérieur à 0 une proposition est déja en cours-->
+      <p>Proposition : {{ thing?.reserv }}</p>
+
+      <!--Formulaire-->
+      <form [formGroup]="reservForm">
+
+        <div class="form-group">
+
+          <!--Champs Proposition (en €)-->
+          <label for="proposition">Proposition (en €)</label>
+          <input type="number" id="proposition" class="form-control" formControlName="proposition" min="0">
+
+          <!--Boutton Proposer un prix-->
+          <!--Il est impossible de proposer un prix si un prix a déja été proposé ou que vous etes le créateur de l'annonce-->
+          <button type=button class="btn btn-primary m-1" (click)="onReserv()"
+            [disabled]="thing.reserv !== 0 || userId === thing?.userId">Proposer un prix</button>
+
+        </div>
+      </form>
+
+    </div>
+  </div>
+</div>

@@ -1,0 +1,44 @@
+<!--Page Modification d'un produit-->
+<mat-spinner *ngIf="loading"></mat-spinner>
+<div *ngIf="!loading" class="col-sm-6 offset-sm-3 mt-2">
+
+  <!--Formulaire-->
+  <form [formGroup]="thingForm">
+
+    <!--Champs Titre-->
+    <div class="form-group">
+      <label for="title">Titre</label>
+      <input type="text" placeholder="Que vendez-vous ?" id="title" formControlName="title" class="form-control">
+    </div>
+
+    <!--Boutton Ajouter une image-->
+    <!--Il est impossible d'importer des images au format autre que png, jpg et jpeg-->
+    <button class="btn btn-success" type="button" (click)="filePicker.click()">Ajouter une image</button>
+    
+    <!--Champs Image-->
+    <input type="file" #filePicker (change)="onImagePick($event)">
+    <div class="image-preview" *ngIf="imagePreview">
+      <img [src]="imagePreview" alt="">
+    </div>
+
+    <!--Champs Prix (en €)-->
+    <div class="form-group">
+      <label for="price">Prix (en €)</label>
+      <input type="number" id="price" class="form-control" formControlName="price" min="0">
+    </div>
+
+    <!--Champs Description-->
+    <div class="form-group">
+      <label for="description">Description</label>
+      <textarea name="description" id="description" cols="30" rows="7" class="form-control"
+        formControlName="description" placeholder="Décrivez votre objet (type, qualité, etc.)"></textarea>
+    </div>
+
+    <!--Champs Valider-->
+    <!--Il est impossible de valider si tous les champs ne sont pas remplis au bon format-->
+    <button class="btn btn-primary" (click)="onSubmit()" [disabled]="thingForm.invalid">Valider</button>
+
+    <!--Message d'erreur-->
+    <p class="alert-danger" *ngIf="errorMessage">{{ errorMessage }}</p>
+  </form>
+</div>

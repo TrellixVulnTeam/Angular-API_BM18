@@ -1,0 +1,36 @@
+<!--Page Inscription-->
+<mat-spinner *ngIf="loading"></mat-spinner>
+<div class="col-sm-8 offset-sm-2 mt-2" *ngIf="!loading">
+  <form [formGroup]="signupForm">
+
+    <!--Champs Nom-->
+    <div class="form-group">
+      <label for="lastname">Nom</label>
+      <input type="lastname" id="lastname" formControlName="lastname" class="form-control">
+    </div>
+
+    <!--Champs Prénom-->
+    <div class="form-group">
+      <label for="firstname">Prénom</label>
+      <input type="firstname" id="firstname" formControlName="firstname" class="form-control">
+    </div>
+    <!--Champs Adresse mail-->
+    <div class="form-group">
+      <label for="email">Adresse mail</label>
+      <input type="email" id="email" formControlName="email" class="form-control">
+    </div>
+
+    <!--Champs Mot de passe-->
+    <div class="form-group">
+      <label for="password">Mot de passe</label>
+      <input type="password" id="password" formControlName="password" class="form-control">
+    </div>
+
+    <!--Bouton Inscription-->
+    <!--Validation possible que si les contraintes de formatage sur les champs nom, prenom, adresse mail et mot de passe sont remplis-->
+    <button class="btn btn-success" (click)="onSignup()" [disabled]="signupForm.invalid">Inscription</button>
+  </form>
+
+  <!--Affichage message d'erreurs-->
+  <p>{{ errorMessage }}</p>
+</div>

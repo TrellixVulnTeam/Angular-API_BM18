@@ -1,0 +1,28 @@
+<!--Page Connexion-->
+<mat-spinner *ngIf="loading"></mat-spinner>
+<div class="col-sm-8 offset-sm-2 mt-2" *ngIf="!loading">
+
+  <!--Formulaire-->
+  <form [formGroup]="loginForm">
+
+    <!--Champs Adresse mail-->
+    <div class="form-group">
+      <label for="email">Adresse mail</label>
+      <input type="email" id="email" formControlName="email" class="form-control">
+    </div>
+
+    <!--Champs Mot de passe-->
+    <div class="form-group">
+      <label for="password">Mot de passe</label>
+      <input type="password" id="password" formControlName="password" class="form-control">
+    </div>
+
+    <!--Boutton Connexion-->
+    <!--Validation possible de si les contraintes de formatage sont respectées-->
+    <button class="btn btn-success" (click)="onLogin()" [disabled]="loginForm.invalid">Connexion</button>
+  </form>
+
+  <!--Message d'erreur-->
+  <p>{{ errorMessage }}</p>
+
+</div>

@@ -1,0 +1,42 @@
+<!--Page Accueil-->
+<!--Barre de navigation-->
+
+<header>
+  <h2 class="header-title">
+    Polytech Tours
+  </h2>
+</header>
+
+<!--Bandeau-->
+
+<div class="jumbotron text-center">
+
+  <!--Affichage du bandeau-->
+  <h1 class="display-4  text-white">Site interne de Polytech Tours</h1>
+  <h2 class="text-white">Services</h2>
+
+</div>
+
+<!--Body-->
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div style="background-color:#1b1b1b;" class="card  text-white
+       mx-auto" routerLink="/body" routerLinkActive="active">
+
+        <!--Affichage du titre de PolyCommerce-->
+        <h3 class="card-header text-center">{{ title }}</h3>
+        <div class="card-body">
+
+          <!--Affichage du logo de PolyCommerce-->
+          <img class="w-50 mx-auto d-block" [src]="icone" /><br>
+
+          <!--Affichage de la description de PolyCommerce-->
+          <p class="card-text text-center">Achats & Ventes</p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</body>

@@ -1,0 +1,37 @@
+<!--Page Mes informations-->
+<mat-spinner *ngIf="loading"></mat-spinner>
+<div *ngIf="!loading" class="col-sm-6 offset-sm-3 mt-2">
+
+  <!--Formulaire-->
+  <form>
+    <div class="single-user-pane">
+      <div class="single-user-info">
+
+        <!--Titre-->
+        <div class="form-group">
+          <label for="lastname">Mes informations</label>
+        </div>
+
+        <!--Champs Prenom-->
+        <div class="form-group">
+          <label for="lastname">Prénom : {{user?.firstname }}</label>
+        </div>
+
+        <!--Champs Nom-->
+        <div class="form-group">
+          <label for="lastname">Nom : {{user?.lastname }}</label>
+        </div>
+
+        <!--Champs Email-->
+        <div class="form-group">
+          <label for="lastname">Email : {{user?.email}}</label>
+        </div>
+
+        <!--Boutton Modifier-->
+        <!--Il est possible de modifier que vos propres informations -->
+        <button class="btn btn-success m-1" (click)="onModify()" [disabled]="userId !== user._id">Modifier</button>
+
+      </div>
+    </div>
+  </form>
+</div>
