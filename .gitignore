@@ -1,3 +1,4 @@
 frontend/node-modules/*
-frontend/.angular/*
+frontend/.angular/cache/angular-webpack/5fac3161e706391fc09aac797b6f2c0576a5b973/0.pack
+frontend/.angular/cache/angular-webpack/369947df6a5e50f0556c49743a987be6cb0d49d3/0.pack
 *.cmd
