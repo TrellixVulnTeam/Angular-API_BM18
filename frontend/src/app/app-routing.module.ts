@@ -16,7 +16,7 @@ import { ModifyUserComponent } from './user/modify-user/modify-user.component';
 import { SingleUserComponent } from './user/single-user/single-user.component';
 import { UserStuffListComponent } from './user/user-stuff-list/user-stuff-list.component';
 
-const routes: Routes = [
+export const routes: Routes = [
 
   //Redirection concernant les produits 
   {

@@ -22,8 +22,11 @@
     "@angular/platform-browser-dynamic": "^8.2.5",
     "@angular/router": "^8.2.5",
     "bootstrap": "^4.3.1",
+    "calculator": "^0.1.12",
     "core-js": "^3.2.1",
+    "jasmine": "^3.10.0",
     "ng-rn": "^1.0.0",
+    "ngrx": "^0.0.1-security",
     "rxjs": "^6.4.0",
     "tslib": "^1.10.0",
     "zone.js": "~0.9.1"
@@ -47,6 +50,7 @@
     "protractor": "~5.4.2",
     "ts-node": "~8.3.0",
     "tslint": "~5.19.0",
-    "typescript": "~3.5.3"
+    "typescript": "~3.5.3",
+    "webpack": "^4.46.0"
   }
 }
