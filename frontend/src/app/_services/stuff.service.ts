@@ -14,8 +14,8 @@ export class StuffService {
   //Déclaration/Initialisation des variables publique et privées
   private stuff: Thing;
 
-  public stuff$ = new Subject<Thing[]>();
-  public stuffUser$ = new Subject<Thing[]>();
+  public stuff$ = new Subject<Thing>();
+  public stuffUser$ = new Subject<Thing>();
 
 
   //Méthode d'obtention des informations des produits d'un utilisateur de la base de donné MongoDB
