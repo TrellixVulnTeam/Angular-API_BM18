@@ -3,10 +3,10 @@ import { TestBed, fakeAsync, tick } from '@angular/core/testing';
 import { RouterTestingModule } from "@angular/router/testing";
 import { Router } from "@angular/router";
 
-import { UserComponent } from './../user/user.component';
-import { ModifyUserComponent } from './../user/modify-user/modify-user.component';
-import { SingleUserComponent } from './../user/single-user/single-user.component';
-import { UserStuffListComponent } from './../user/user-stuff-list/user-stuff-list.component';
+import { UserComponent } from '../user/user.component';
+import { ModifyUserComponent } from '../user/modify-user/modify-user.component';
+import { SingleUserComponent } from '../user/single-user/single-user.component';
+import { UserStuffListComponent } from '../user/user-stuff-list/user-stuff-list.component';
 import { routes } from "../app-routing.module";
 import { AppComponent } from "../app.component";
 

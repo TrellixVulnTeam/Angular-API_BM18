@@ -1,36 +1,20 @@
 {
   "name": "backend",
-  "version": "1.0.0",
+  "version": "11.0.0",
   "description": "",
   "main": "server.js",
   "scripts": {
-    "test": "jasmine"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "angularjs-testbed": "^0.3.3",
     "bcrypt": "^5.0.1",
     "body-parser": "^1.19.0",
     "express": "^4.17.1",
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^6.0.12",
     "mongoose-unique-validator": "^3.0.0",
-<<<<<<< HEAD
-    "multer": "^1.4.4"
-  },
-  "devDependencies": {
-    "jasmine": "^3.10.0",
-    "jasmine-browser-runner": "^0.10.0",
-    "jasmine-core": "^3.10.1",
-    "karma-chrome-launcher": "^3.1.0",
-    "karma-firefox-launcher": "^2.1.2",
-    "karma-ie-launcher": "^1.0.0",
-    "karma-jasmine": "^4.0.1",
-    "karma-junit-reporter": "^2.0.1",
-    "karma-opera-launcher": "^1.0.0"
-=======
     "multer": "^1.4.3"
->>>>>>> parent of e7653e42 (Angular 13 Version 3)
   }
 }
