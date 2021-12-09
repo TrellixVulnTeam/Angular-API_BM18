@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "angularjs-testbed": "^0.3.3",
     "bcrypt": "^5.0.1",
     "body-parser": "^1.19.0",
     "express": "^4.17.1",
@@ -20,6 +21,12 @@
   "devDependencies": {
     "jasmine": "^3.10.0",
     "jasmine-browser-runner": "^0.10.0",
-    "jasmine-core": "^3.10.1"
+    "jasmine-core": "^3.10.1",
+    "karma-chrome-launcher": "^3.1.0",
+    "karma-firefox-launcher": "^2.1.2",
+    "karma-ie-launcher": "^1.0.0",
+    "karma-jasmine": "^4.0.1",
+    "karma-junit-reporter": "^2.0.1",
+    "karma-opera-launcher": "^1.0.0"
   }
 }
