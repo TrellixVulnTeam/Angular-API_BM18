@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "polycommerce": {
+    "go-fullstack-frontend": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -36,7 +36,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/polycommerce",
+            "outputPath": "dist/go-fullstack-frontend",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -85,18 +85,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "polycommerce:build"
+            "browserTarget": "go-fullstack-frontend:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "polycommerce:build:production"
+              "browserTarget": "go-fullstack-frontend:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "polycommerce:build"
+            "browserTarget": "go-fullstack-frontend:build"
           }
         },
         "test": {
@@ -113,13 +113,12 @@
             "assets": [
               "src/favicon.ico",
               "src/assets"
-            ],
-            "codeCoverage": true
+            ]
           }
         }
       }
     },
-    "polycommerce-e2e": {
+    "go-fullstack-frontend-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "architect": {
@@ -127,16 +126,16 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "polycommerce:serve"
+            "devServerTarget": "go-fullstack-frontend:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "polycommerce:serve:production"
+              "devServerTarget": "go-fullstack-frontend:serve:production"
             }
           }
         }
       }
     }
   },
-  "defaultProject": "polycommerce"
+  "defaultProject": "go-fullstack-frontend"
 }
