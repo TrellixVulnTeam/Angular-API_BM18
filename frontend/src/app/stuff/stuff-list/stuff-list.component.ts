@@ -13,7 +13,7 @@ import { Router } from '@angular/router';
 export class StuffListComponent implements OnInit, OnDestroy {
 
   //Déclaration de variables publiques
-  public stuff: Thing;
+  public stuff: Thing = new Thing();
   public part: number;
   public loading: boolean;
 

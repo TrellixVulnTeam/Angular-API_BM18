@@ -3,11 +3,13 @@
 
 module.exports = function (config) {
   config.set({
-    basePath: '',
-    frameworks: ['jasmine', '@angular-devkit/build-angular'],
-    plugins: [
+    basePath: '', //Configurer la base de tous les chemins relatifs utilisés
+    frameworks: ['jasmine', '@angular-devkit/build-angular'], //Identifie de Jasmine comme le framework de test
+    plugins: [ // Définition des plugins utilisés 
       require('karma-jasmine'),
+      //Lancement de chrome
       require('karma-chrome-launcher'),
+      //Génération d'un rapport
       require('karma-jasmine-html-reporter'),
       require('karma-coverage-istanbul-reporter'),
       require('@angular-devkit/build-angular/plugins/karma')
@@ -20,6 +22,7 @@ module.exports = function (config) {
       reports: ['html', 'lcovonly'],
       fixWebpackSourcePaths: true
     },
+    //Paramètres de conexion à chrome
     reporters: ['progress', 'kjhtml'],
     port: 9876,
     colors: true,

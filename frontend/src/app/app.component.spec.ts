@@ -21,16 +21,18 @@ import { ModifyUserComponent } from './user/modify-user/modify-user.component';
 import { SingleUserComponent } from './user/single-user/single-user.component';
 import { UserStuffListComponent } from './user/user-stuff-list/user-stuff-list.component';
 
-//Import des modules angular
+//Import des modules angular et d'outils de test
 import { TestBed, async } from '@angular/core/testing';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import { AuthService } from './_services/auth.service';
 
-describe('AppComponent', () => { // 2
-    beforeEach(async(() => { // 3
+describe('AppComponent', () => { 
+    //Déclare de tous les composants utilisés dans le module
+    beforeEach(async(() => { 
         TestBed.configureTestingModule({
             declarations: [
                 AppComponent,
@@ -61,22 +63,18 @@ describe('AppComponent', () => { // 2
     }).compileComponents();
 }));
 
-it('should create the app', () => { // 4
+//Vérification que le composant se compile correctement
+it('Vérification du lancement du module app', () => { 
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.debugElement.componentInstance;
     expect(app).toBeTruthy();
 });
 
-it('should have as title \'angular-component-testing\'', () => {  //5
+//Vérification que la variable title a la bonne valeur souhaitée
+it('Vérification de la variable title', () => {  
     const fixture = TestBed.createComponent(AppComponent);
-    const app = fixture.debugElement.componentInstance;
+    const app = fixture.debugElement.componentInstance;  
     expect(app.title).toEqual('app');
 });
 
-it('should render title in a h1 tag', () => { //6
-    const fixture = TestBed.createComponent(AppComponent);
-    fixture.detectChanges();
-    const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('h1').textContent).toContain('Welcome to angular-component-testing!');
-});
 });

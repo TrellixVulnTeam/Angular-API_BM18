@@ -5,7 +5,7 @@ import { Thing } from '../../_models/thing.model';
 import { StuffService } from '../../_services/stuff.service';
 import { Subscription } from 'rxjs';
 import { AuthService } from '../../_services/auth.service';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-single-thing',
@@ -15,8 +15,10 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 export class SingleThingComponent implements OnInit, OnDestroy {
   
   //Déclaration des variables publiques
-  public reservForm: FormGroup;
-  public thing: Thing;
+  public reservForm:  FormGroup = new FormGroup({
+    proposition: new FormControl(),
+});
+  public thing: Thing = new Thing;
   public loading: boolean;
   public userId: string;
   public part: number;

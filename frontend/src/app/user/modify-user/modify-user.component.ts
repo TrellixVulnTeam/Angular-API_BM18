@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
 import { StateService } from '../../_services/state.service';
 import { UserService } from '../../_services/user.service';
@@ -14,11 +14,16 @@ import { Subscription } from 'rxjs';
 export class ModifyUserComponent implements OnInit {
 
   //Déclaration de variables
-  user: User;
-  userForm: FormGroup;
+  user: User = new User;
+  userForm: FormGroup = new FormGroup({
+    firstname: new FormControl(),
+    lastname: new FormControl(),
+    email: new FormControl(),
+    password: new FormControl()
+  });
   loading = false;
-  errorMessage: string;
-  part: number;
+  errorMessage: string = null;
+  part: number = null;
 
   //Déclaration d'une variable privée 
   private partSub: Subscription;

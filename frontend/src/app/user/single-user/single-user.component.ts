@@ -14,7 +14,7 @@ import { AuthService } from '../../_services/auth.service';
 export class SingleUserComponent implements OnInit, OnDestroy {
 
   //Déclaration de variables publiques
-  public user: User;
+  public user: User = new User();
   public loading: boolean;
   public userId: string;
   public part: number;
@@ -40,7 +40,7 @@ export class SingleUserComponent implements OnInit, OnDestroy {
       (user: User) => {
         this.loading = false;
         this.user = user;
-        this.user._id = user._id;
+       // this.user._id = user._id;
       });
     this.partSub = this.state.part$.subscribe(
       (part) => {

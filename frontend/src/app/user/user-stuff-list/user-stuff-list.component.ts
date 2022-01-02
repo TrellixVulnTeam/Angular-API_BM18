@@ -14,7 +14,7 @@ import { AuthService } from 'src/app/_services/auth.service';
 export class UserStuffListComponent implements OnInit {
 
   //Déclaration/Initialisation des variables privées
-  public things: Thing;
+  public things: Thing = new Thing();
   public part: number = 0;
   public loading: boolean = true;
   public userId: string = "";

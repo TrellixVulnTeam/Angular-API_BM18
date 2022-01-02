@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 import { StateService } from '../../_services/state.service';
 import { StuffService } from '../../_services/stuff.service';
 import { ActivatedRoute, Router } from '@angular/router';
@@ -15,8 +15,13 @@ import { Thing } from '../../_models/thing.model';
 export class ModifyThingWithUploadComponent implements OnInit {
 
   //Déclaration des variables publiques
-  public thingForm: FormGroup;
-  public thing: Thing;
+  public thingForm: FormGroup = new FormGroup({
+        title: new FormControl(),
+        description: new FormControl(),
+        price: new FormControl(),
+        image: new FormControl()
+  });
+  public thing: Thing = new Thing;
   public loading = false;
   public part: number;
   public userId: string;

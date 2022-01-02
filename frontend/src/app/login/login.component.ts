@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { AuthService } from '../_services/auth.service';
 import { StateService } from '../_services/state.service';
@@ -12,9 +12,12 @@ import { StateService } from '../_services/state.service';
 export class LoginComponent implements OnInit {
 
   //Déclaration des variables
-  loginForm: FormGroup;
+  loginForm: FormGroup = new FormGroup({
+    email: new FormControl(),
+    password: new FormControl()
+  });
   loading = false;
-  errorMessage: string;
+  errorMessage: string = '';
 
   //Déclaration des composants
   constructor(private formBuilder: FormBuilder,

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { AuthService } from '../_services/auth.service';
 import { StateService } from '../_services/state.service';
@@ -12,9 +12,15 @@ import { StateService } from '../_services/state.service';
 export class RegisterComponent implements OnInit {
 
   //Déclaratino des variables
-  signupForm: FormGroup;
+  signupForm: FormGroup = new FormGroup({
+    firstname: new FormControl(),
+    lastname: new FormControl(),
+    email: new FormControl(),
+    password: new FormControl()
+  });
   loading = false;
   errorMessage: string;
+  part: number;
 
   //Déclaratino des composants
   constructor(private formBuilder: FormBuilder,
@@ -36,6 +42,7 @@ export class RegisterComponent implements OnInit {
   //Mathode d'inscription
   onSignup() {
     this.loading = true;
+    this.part = 3;
 
     //Initialisation des variables via la page HTML
     const firstname = this.signupForm.get('firstname').value;

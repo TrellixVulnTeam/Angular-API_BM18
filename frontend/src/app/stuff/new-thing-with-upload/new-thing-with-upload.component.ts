@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 import { StateService } from '../../_services/state.service';
 import { StuffService } from '../../_services/stuff.service';
 import { Router } from '@angular/router';
@@ -15,7 +15,12 @@ import { mimeType } from '../mime-type.validator';
 export class NewThingWithUploadComponent implements OnInit {
 
   //Déclaration des variables publiques
-  public thingForm: FormGroup;
+  public thingForm:  FormGroup = new FormGroup({
+    title: new FormControl(),
+    description: new FormControl(),
+    price: new FormControl(),
+    image: new FormControl()
+});
   public loading = false;
   public part: number;
   public userId: string;
