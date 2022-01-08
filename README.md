@@ -23,8 +23,8 @@
 
 ## Identifiant
 
-Nom : Jean
-Prénom : Dujardin
-Email : jean.dujardin@email.com
-Mot de passe : Jean
+ - Nom : Jean
+ - Prénom : Dujardin
+ - Email : jean.dujardin@email.com
+ - Mot de passe : Jean
 
