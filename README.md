@@ -20,3 +20,11 @@
  - http://localhost:3000/
 3. Test - Jasmine & Karma
  - http://localhost:9876/
+
+## Identifiant
+
+Nom : Jean
+Prénom : Dujardin
+Email : jean.dujardin@email.com
+Mot de passe : Jean
+
