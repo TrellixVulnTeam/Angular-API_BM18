@@ -1,8 +1,4 @@
 frontend/node_modules/*
 backend/node_modules/*
 frontend/.angular/*
-frontend/.angular/cache/angular-webpack/5fac3161e706391fc09aac797b6f2c0576a5b973/0.pack
-frontend/.angular/cache/angular-webpack/369947df6a5e50f0556c49743a987be6cb0d49d3/0.pack
 *.cmd
-frontend/.angular/cache/angular-webpack/5f68f9fce9f972c0619efd99e8b7d1726ab93856/0.pack
-frontend/.angular/cache/angular-webpack/8a13efc339e070cdfb2ae7aa7cdb707f671d7e0a/0.pack
