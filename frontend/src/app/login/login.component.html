@@ -8,18 +8,18 @@
     <!--Champs Adresse mail-->
     <div class="form-group">
       <label for="email">Adresse mail</label>
-      <input type="email" id="email" formControlName="email" class="form-control">
+      <input type="email" name="email" id="email" formControlName="email" class="form-control">
     </div>
 
     <!--Champs Mot de passe-->
     <div class="form-group">
       <label for="password">Mot de passe</label>
-      <input type="password" id="password" formControlName="password" class="form-control">
+      <input type="password" name="password" id="password" formControlName="password" class="form-control">
     </div>
 
     <!--Boutton Connexion-->
     <!--Validation possible de si les contraintes de formatage sont respectées-->
-    <button class="btn btn-success" (click)="onLogin()" [disabled]="loginForm.invalid">Connexion</button>
+    <button class="btn btn-success" type="submit"  (click)="onLogin()" [disabled]="loginForm.invalid">Connexion</button>
   </form>
 
   <!--Message d'erreur-->

@@ -10,62 +10,61 @@
 import Chance from 'chance';
 const chance = new Chance();
 
-describe ('Register', () => {
+describe('Login', () => {
 
-    const email = chance.email();
-    const password = 'password';
-    const firstname = chance.first();
-    const lastname = chance.last();
-
+    const email = 'jean.dujardin@email.com';
+    const password = 'Jean';
+    
     beforeEach(() => {
         cy.visit('http://localhost:4200');
     })
 
-    it('has a title', () => {
+    it('click on card', () => {
 
-        cy.get('.header-title').contains('Polytech Tours')
-        expect(2).to.equal(2);
+        cy.get('div.card.text-white.mx-auto').click();
+        cy.contains('Connexion').click();
+        cy.url().should('include', 'body/login');
     });
 
+    it('login', () => {
+        cy.get('div.card.text-white.mx-auto').click();
 
-    it('has a headband', () => {
+        cy.contains('Connexion').click();
 
-        cy.get('.display-4').contains('Site interne de Polytech Tours')
+        cy.url().should('include', 'body/login');
 
-    });
+        //Fill out the form
+        cy.get('input[name=email]').type(email);
+        cy.get('input[name=password]').type(password);
 
-it('click on card', () => {
+        cy.get('button[type=submit]').click();
 
-    cy.get('div.card.text-white.mx-auto').click();
-    cy.contains('Connexion').click();
-    cy.url().should('include', 'body/login');
-});
+        //Asset URL
+        cy.url().should('include', 'body/all-stuff');
 
-it('register or inscription', () => {
-    cy.get('div.card.text-white.mx-auto').click();
+    })
 
-    cy.url().should('include', 'body/login');
+    it('bad login', () => {
+        cy.get('div.card.text-white.mx-auto').click();
 
-    cy.contains('Inscription').click();
+        cy.url().should('include', 'body/login');
 
-    //Asset URL
-    cy.url().should('include', 'body/register');
+        cy.contains('Connexion').click();
 
-    //Fill out the form
-    cy.get('input[name=lastname]').type(lastname);
-    cy.get('input[name=firstname]').type(firstname);
-    cy.get('input[name=email]').type(email);
-    cy.get('input[name=password]').type(password);
+        //Fill out the form
+        cy.get('input[name=email]').type(email);
+        cy.get('input[name=password]').type('bad password');
 
-    cy.get('button[type=submit]').click();
-
-    //cy.login(email, password);
-
-    //cy.request('POST', 'http://localhost:3000/api/auth/signup')
+        cy.get('button[type=submit]').click();
 
 
-})
+        cy.intercept('POST', 'http://localhost:3000/api/auth/signup',  {
+            statusCode: 401,
+            body: 'Unauthorized',
+        })
 
-    
+    })
+
+
 
 });

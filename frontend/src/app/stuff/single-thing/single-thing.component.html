@@ -12,21 +12,21 @@
     <div class="single-thing-info">
 
       <!--Affichage du titre-->
-      <h1>{{ thing?.title }}</h1>
+      <h1 name="title">{{ thing?.title }}</h1>
 
       <!--Affichage du prix-->
-      <h2 class="single-thing-price">{{ thing?.price / 100 | currency:'EUR' }}</h2>
+      <h2 name="price" class="single-thing-price">{{ thing?.price / 100 | currency:'EUR' }}</h2>
 
       <!--Affichage de la description-->
-      <p>{{ thing?.description }}</p>
+      <p name="paraph">{{ thing?.description }}</p>
 
       <!--Boutton Modifier-->
       <!--Il est impossible de modifier l'annonce si voue n'etes pas le créateur de celle-ci-->
-      <button class="btn btn-success m-1" (click)="onModify()" [disabled]="userId !== thing?.userId">Modifier</button>
+      <button class="btn btn-success m-1" name="modifier" (click)="onModify()" [disabled]="userId !== thing?.userId">Modifier</button>
 
       <!--Boutton Supprimer-->
       <!--Il est impossible de supprimer l'annonce si voue n'etes pas le créateur de celle-ci-->
-      <button type=button class="btn btn-danger m-1" (click)="clickMethod()"
+      <button type=button name="supprimer" class="btn btn-danger m-1" (click)="clickMethod()"
         [disabled]="userId !== thing?.userId">Supprimer</button><br>
       <br>
 

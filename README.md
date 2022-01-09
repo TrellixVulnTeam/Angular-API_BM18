@@ -11,6 +11,8 @@
  - npm start
 4. Start test - Frontend - Jasmine & Karma
  - npm test
+5. Start test - End-to-end - Cypress
+ - npm run cypress
 
 ## Url
 

@@ -8,7 +8,7 @@
     <!--Champs Titre-->
     <div class="form-group">
       <label for="title">Titre</label>
-      <input type="text" placeholder="Que vendez-vous ?" id="title" formControlName="title" class="form-control">
+      <input type="text" placeholder="Que vendez-vous ?" name="title" id="title" formControlName="title" class="form-control">
     </div>
 
     <!--Boutton Ajouter un image-->
@@ -25,19 +25,19 @@
     <!--Champs Prix (in €)-->
     <div class="form-group">
       <label for="price">Prix (en €)</label>
-      <input type="number" id="price" class="form-control" formControlName="price" min="0">
+      <input type="number" name="price" id="price" class="form-control" formControlName="price" min="0">
     </div>
 
     <!--Champs Description-->
     <div class="form-group">
       <label for="description">Description</label>
-      <textarea name="description" id="description" cols="30" rows="7" class="form-control"
+      <textarea id="description" name="describe" cols="30" rows="7" class="form-control"
         formControlName="description" placeholder="Décrivez votre objet (type, qualité, etc.)"></textarea>
     </div>
 
     <!--Boutton Valider-->
     <!--Possibilité de valider que lorsque les champs du formulaire sont remplis au bon format-->
-    <button class="btn btn-primary" (click)="onSubmit()" [disabled]="thingForm.invalid">Valider</button>
+    <button class="btn btn-primary" type="submit" (click)="onSubmit()" [disabled]="thingForm.invalid">Valider</button>
 
     <!--Message d'erreur-->
     <p class="alert-danger" *ngIf="errorMessage">{{ errorMessage }}</p>
