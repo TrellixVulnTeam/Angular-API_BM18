@@ -64,14 +64,14 @@ describe('AppComponent', () => {
 }));
 
 //Vérification que le composant se compile correctement
-it('Vérification du lancement du module app', () => { 
+it('Module App - 1 - Vérification du lancement du module app', () => { 
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.debugElement.componentInstance;
     expect(app).toBeTruthy();
 });
 
 //Vérification que la variable title a la bonne valeur souhaitée
-it('Vérification de la variable title', () => {  
+it('Module App - 1 - Vérification de la variable title', () => {  
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.debugElement.componentInstance;  
     expect(app.title).toEqual('app');

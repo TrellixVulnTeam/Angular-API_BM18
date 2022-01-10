@@ -6,10 +6,14 @@ import { AuthService } from '../_services/auth.service';
 import { StateService } from '../_services/state.service';
 import { LoginComponent } from './login.component';
 
+//Test module de conexion
 describe('LoginComponent', () => {
+  
+  //Déclaration
   let component: LoginComponent;
   let fixture: ComponentFixture<LoginComponent>;
 
+  //Initialisation
   beforeEach(() => {
     const formBuilderStub = () => ({ group: object => ({}) });
     const routerStub = () => ({ navigate: array => ({}) });
@@ -31,15 +35,18 @@ describe('LoginComponent', () => {
     component = fixture.componentInstance;
   });
 
-  it('can load instance', () => {
+  //Test module
+  it('Login - 1 - Vérification de la création du composant login', () => {
     expect(component).toBeTruthy();
   });
 
-  it('loading has default value', () => {
+  //Test module
+  it('Login - 2 - Vérification du chargement du module', () => {
     expect(component.loading).toEqual(false);
   });
 
-  describe('ngOnInit', () => {
+  //Test fonction d'initialisation
+  describe('Login - 3 - Vérification de la fonction ngOnInit', () => {
     it('makes expected calls', () => {
       const formBuilderStub: FormBuilder = fixture.debugElement.injector.get(
         FormBuilder
@@ -50,7 +57,8 @@ describe('LoginComponent', () => {
     });
   });
 
-  describe('onLogin', () => {
+  //Test fonction de connexion
+  describe('Login - 4 - Vérification de la fonction onLogin', () => {
     it('makes expected calls', () => {
       const routerStub: Router = fixture.debugElement.injector.get(Router);
       const authServiceStub: AuthService = fixture.debugElement.injector.get(

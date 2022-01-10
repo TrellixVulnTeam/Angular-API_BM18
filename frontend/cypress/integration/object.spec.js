@@ -27,7 +27,7 @@ describe('Objet', () => {
     })
 
     //Test de vente d'un produit
-    it('vendre un produit', () => {
+    it('Test e2e – 3 - Vendre un produit', () => {
         //Recherche d'éléments HTML et clique
         cy.get('div.card.text-white.mx-auto').click();
 
@@ -66,7 +66,7 @@ describe('Objet', () => {
     })
 
     //Test de consultation d'un produit
-    it('consulter un produit', () => {
+    it('Test e2e – 7 - Consulter un produit', () => {
 
         //Recherche d'éléments HTML et clique
         cy.get('div.card.text-white.mx-auto').click();
@@ -100,7 +100,7 @@ describe('Objet', () => {
     })
 
     //Test de modification d'un produit
-    it('modifier un produit', () => {
+    it('Test e2e – 4 - Modifier un produit', () => {
 
         //Recherche d'éléments HTML
         cy.get('div.card.text-white.mx-auto').click();
@@ -137,7 +137,7 @@ describe('Objet', () => {
     })
 
     //Test non passant de modification d'un produit
-    it('modifier un produit ou pas', () => {
+    it('Test e2e – 4.2 - Mauvais prix', () => {
 
         //Recherche d'éléments HTML et clique
         cy.get('div.card.text-white.mx-auto').click();
@@ -175,7 +175,7 @@ describe('Objet', () => {
 
 
     //Test de suppression d'un produit
-    it('supprimer un produit', () => {
+    it('Test e2e – 6 - Supprimer un produit', () => {
 
         //Recherche d'éléments URL et clique
         cy.get('div.card.text-white.mx-auto').click();

@@ -22,7 +22,7 @@ describe('Login', () => {
     })
 
     //Test de passage de la page d'acceuil
-    it('cliquer sur le carte de la page d\'acceuil', () => {
+    it('Cliquer sur le carte de la page d\'acceuil', () => {
 
         //Recherche d'éléments HTML et clique
         cy.get('div.card.text-white.mx-auto').click();
@@ -33,7 +33,7 @@ describe('Login', () => {
     });
 
     //Test de connexion à l'API
-    it('connexion', () => {
+    it('Test e2e – 2 - Connexion', () => {
 
         //Recherche d'éléments HTML et clique
         cy.get('div.card.text-white.mx-auto').click();
@@ -54,7 +54,7 @@ describe('Login', () => {
     })
 
     //Tets non passant de connexion à l'API
-    it('mauvaise connexion', () => {
+    it('Test e2e – 2.2 - Mauvaise connexion', () => {
 
         //Recherche d'éléments HTML et clique
         cy.get('div.card.text-white.mx-auto').click();

@@ -32,7 +32,7 @@ describe('Register', () => {
     });
 
     //Test bandeau
-    it('bandeau', () => {
+    it('Bandeau', () => {
 
         //Recherche d'éléments HTML et clique
         cy.get('.display-4').contains('Site interne de Polytech Tours');
@@ -40,7 +40,7 @@ describe('Register', () => {
     });
 
     //Test de passage de la page d'acceuil
-    it('cliquer sur le carte de la page d\'acceuil', () => {
+    it('Cliquer sur le carte de la page d\'acceuil', () => {
 
         //Recherche d'éléments HTML et clique
         cy.get('div.card.text-white.mx-auto').click();
@@ -51,7 +51,7 @@ describe('Register', () => {
     });
 
     //Test d'inscription
-    it('inscription', () => {
+    it('Test e2e – 1 - Inscription', () => {
 
         //Recherche d'éléments HTML et clique
         cy.get('div.card.text-white.mx-auto').click();
@@ -86,7 +86,7 @@ describe('Register', () => {
     })
 
     //Test non passant de double inscription
-    it('double inscription', () => {
+    it('Test e2e – 1.2 - Double inscription', () => {
 
         //Recherche d'éléments HTML et clique
         cy.get('div.card.text-white.mx-auto').click();
