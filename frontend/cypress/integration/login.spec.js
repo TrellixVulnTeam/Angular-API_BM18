@@ -12,53 +12,68 @@ const chance = new Chance();
 
 describe('Login', () => {
 
+    //Initialisation des variables
     const email = 'jean.dujardin@email.com';
     const password = 'Jean';
-    
+
+    //Visite de la partie frontend
     beforeEach(() => {
         cy.visit('http://localhost:4200');
     })
 
-    it('click on card', () => {
+    //Test de passage de la page d'acceuil
+    it('cliquer sur le carte de la page d\'acceuil', () => {
 
+        //Recherche d'éléments HTML et clique
         cy.get('div.card.text-white.mx-auto').click();
         cy.contains('Connexion').click();
+
+        //Affirmation URL
         cy.url().should('include', 'body/login');
     });
 
-    it('login', () => {
-        cy.get('div.card.text-white.mx-auto').click();
+    //Test de connexion à l'API
+    it('connexion', () => {
 
+        //Recherche d'éléments HTML et clique
+        cy.get('div.card.text-white.mx-auto').click();
         cy.contains('Connexion').click();
 
+        //Affirmation URL
         cy.url().should('include', 'body/login');
 
-        //Fill out the form
+        //Complétion d'un formulaire
         cy.get('input[name=email]').type(email);
         cy.get('input[name=password]').type(password);
 
+        //Recherche d'éléments HTML et clique
         cy.get('button[type=submit]').click();
 
-        //Asset URL
+        //Affirmation URL
         cy.url().should('include', 'body/all-stuff');
-
     })
 
-    it('bad login', () => {
+    //Tets non passant de connexion à l'API
+    it('mauvaise connexion', () => {
+
+        //Recherche d'éléments HTML et clique
         cy.get('div.card.text-white.mx-auto').click();
 
+        //Affirmation URL
         cy.url().should('include', 'body/login');
 
+        //Recherche d'éléments HTML et clique
         cy.contains('Connexion').click();
 
-        //Fill out the form
+        //Complétion d'un formulaire
         cy.get('input[name=email]').type(email);
         cy.get('input[name=password]').type('bad password');
 
+        //Recherche d'éléments HTML et clique
         cy.get('button[type=submit]').click();
 
-
-        cy.intercept('POST', 'http://localhost:3000/api/auth/signup',  {
+        //Interception d'un trame d'échec
+        cy.intercept('POST', 'http://localhost:3000/api/auth/signup', {
             statusCode: 401,
             body: 'Unauthorized',
         })

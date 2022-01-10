@@ -22,6 +22,8 @@
  - http://localhost:3000/
 3. Test - Jasmine & Karma
  - http://localhost:9876/
+4. Test - Cypress
+ - 
 
 ## Identifiant
 
