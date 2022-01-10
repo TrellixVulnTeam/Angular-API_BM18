@@ -9,10 +9,10 @@
  - npm start
 3. Start - Backend
  - npm start
-4. Start test - Frontend - Jasmine & Karma
+4. Start test - Test Unit - Frontend - Jasmine & Karma
  - npm test
-5. Start test - End-to-end - Cypress
- - npm run cypress
+5. Start test - Test End-to-end - Frontend - Cypress
+ - npm run e2e
 
 ## Url
 
