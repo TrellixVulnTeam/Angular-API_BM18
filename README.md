@@ -13,6 +13,8 @@
  - npm test
 5. Start test - Test End-to-end - Frontend - Cypress
  - npm run e2e
+6. Sonnar-Scanner
+ - npm run sonar
 
 ## Url
 
@@ -23,7 +25,7 @@
 3. Test - Jasmine & Karma
  - http://localhost:9876/
 4. Test - Cypress
- - 
+ - http://localhost:4200/
 
 ## Identifiant
 

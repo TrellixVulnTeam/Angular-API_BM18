@@ -7,7 +7,8 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "cypress open"
+    "e2e": "cypress open",
+    "sonar": "sonar-scanner"
   },
   "private": true,
   "dependencies": {
@@ -41,6 +42,7 @@
     "ngrx": "^0.0.1-security",
     "postcss": "^8.2.10",
     "rxjs": "^7.4.0",
+    "sonar-scanner": "^3.1.0",
     "strip-ansi": "^7.0.1",
     "ts-node": "^10.4.0",
     "tslib": "^2.0.0",
