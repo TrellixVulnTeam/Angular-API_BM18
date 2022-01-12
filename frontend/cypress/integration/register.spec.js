@@ -24,7 +24,7 @@ describe('Register', () => {
     })
 
     //Test titre - Polytech Tours
-    it('titre - Polytech Tours', () => {
+    it('Titre - Polytech Tours', () => {
 
         //Recherche d'éléments HTML et clique
         cy.get('.header-title').contains('Polytech Tours');
