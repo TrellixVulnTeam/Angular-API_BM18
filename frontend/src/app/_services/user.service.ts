@@ -17,7 +17,7 @@ export class UserService {
 
 
     //Méthode d'obtention des informations des utilisateurs à la base de donné MongoDB
-    getAllUser() {
+    private getAllUser() {
 
         //Envoi de la requète au serveur backend via l'url http://localhost:3000/api/auth/get/all
         return this.http.get<User[]>(`http://localhost:3000/api/auth/get/all`).subscribe(
@@ -38,7 +38,7 @@ export class UserService {
 
 
     //Stockage des données reçues dans la variables public user$
-    emitUser() {
+    private emitUser() {
         this.user$.next(this.user);
     }
 
@@ -85,7 +85,7 @@ export class UserService {
 
 
     //Methode de suppression d'un utilisateur selon son identifiant 
-    deleteUser(id: string) {
+    private deleteUser(id: string) {
         return new Promise((resolve, reject) => {
 
             //Envoi de la requète au serveur backend via l'url http://localhost:3000/api/auth/delete/:id

@@ -73,7 +73,7 @@ export class NewThingWithUploadComponent implements OnInit {
   }
 
   //Méthode d'ajout d'une image à un produit lors de sa création 
-  onImagePick(event: Event) {
+  private onImagePick(event: Event) {
     const file = (event.target as HTMLInputElement).files[0];
     this.thingForm.get('image').patchValue(file);
     this.thingForm.get('image').updateValueAndValidity();

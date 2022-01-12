@@ -40,7 +40,7 @@ export class StuffService {
 
 
   //Stockage des données reçues dans la variables public stuffUser$
-  emitStuffUser() {
+  private emitStuffUser() {
     this.stuffUser$.next(this.stuff);
   }
 
@@ -68,7 +68,7 @@ export class StuffService {
 
 
   //Stockage des données reçues dans la variables public stuff$
-  emitStuff() {
+  private emitStuff() {
     this.stuff$.next(this.stuff);
   }
 

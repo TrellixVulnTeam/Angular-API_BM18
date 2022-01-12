@@ -14,16 +14,16 @@ import { Subscription } from 'rxjs';
 export class ModifyUserComponent implements OnInit {
 
   //Déclaration de variables
-  user: User = new User;
-  userForm: FormGroup = new FormGroup({
+  private user: User = new User;
+  private userForm: FormGroup = new FormGroup({
     firstname: new FormControl(),
     lastname: new FormControl(),
     email: new FormControl(),
     password: new FormControl()
   });
   loading = false;
-  errorMessage: string = null;
-  part: number = null;
+  private errorMessage: string = null;
+  private part: number = null;
 
   //Déclaration d'une variable privée 
   private partSub: Subscription;

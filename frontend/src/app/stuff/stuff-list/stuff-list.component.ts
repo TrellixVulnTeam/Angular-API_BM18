@@ -45,7 +45,7 @@ export class StuffListComponent implements OnInit, OnDestroy {
   }
 
   //Redirection vers la page Fiche produit
-  onProductClicked(id: string) {
+  private onProductClicked(id: string) {
     if (this.part === 4) {
       this.router.navigate(['/body/thing/' + id]);
     }

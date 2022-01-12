@@ -95,7 +95,7 @@ export class ModifyThingWithUploadComponent implements OnInit {
   }
 
   //Méthode de modification d'une image 
-  onImagePick(event: Event) {
+  private onImagePick(event: Event) {
     const file = (event.target as HTMLInputElement).files[0];
     this.thingForm.get('image').patchValue(file);
     this.thingForm.get('image').updateValueAndValidity();

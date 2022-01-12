@@ -29,7 +29,7 @@ export class HomeComponent implements OnInit {
     this.state.part = 3;
   }
 
-  onNavigate(endpoint: string) {
+  private onNavigate(endpoint: string) {
     this.router.navigate([endpoint]);
   }
 }

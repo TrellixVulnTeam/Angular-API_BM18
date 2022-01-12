@@ -12,8 +12,8 @@ export class AuthService {
   isAuth$ = new BehaviorSubject<boolean>(false);
   token: string;
   userId: string;
-  lastname: string;
-  firstname: string;
+  private lastname: string;
+  private firstname: string;
 
   //Déclaration de composants
   constructor(private router: Router,

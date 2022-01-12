@@ -8,14 +8,14 @@ import { StateService } from './_services/state.service';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'app';
+  private title = 'app';
 
   //Déclaration des composants
   constructor(private state: StateService,
     private auth: AuthService) { }
 
   //Initialisation des variables publiques de connexion et d'authentification
-  ngOnInit() {
+  private ngOnInit() {
     this.auth.isAuth$.next(false);
     this.auth.userId = '';
     this.auth.token = '';

@@ -12,12 +12,12 @@ import { StateService } from '../_services/state.service';
 export class LoginComponent implements OnInit {
 
   //Déclaration des variables
-  loginForm: FormGroup = new FormGroup({
+  private loginForm: FormGroup = new FormGroup({
     email: new FormControl(),
     password: new FormControl()
   });
   loading = false;
-  errorMessage: string = '';
+  private errorMessage: string = '';
 
   //Déclaration des composants
   constructor(private formBuilder: FormBuilder,

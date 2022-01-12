@@ -50,12 +50,12 @@ export class UserStuffListComponent implements OnInit {
   }
 
   //Envoie vers la page Fiche produit
-  onProductClicked(id: string) {
+  private onProductClicked(id: string) {
     this.router.navigate(['/body/thing/' + id]);
   }
 
   //Destruction des variables stuffSub et partSub
-  ngOnDestroy() {
+  private ngOnDestroy() {
     this.stuffSub.unsubscribe();
     this.partSub.unsubscribe();
   }

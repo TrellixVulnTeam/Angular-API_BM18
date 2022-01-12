@@ -12,15 +12,15 @@ import { StateService } from '../_services/state.service';
 export class RegisterComponent implements OnInit {
 
   //Déclaratino des variables
-  signupForm: FormGroup = new FormGroup({
+  private signupForm: FormGroup = new FormGroup({
     firstname: new FormControl(),
     lastname: new FormControl(),
     email: new FormControl(),
     password: new FormControl()
   });
-  loading = false;
-  errorMessage: string;
-  part: number;
+  private loading = false;
+  private errorMessage: string;
+  private part: number;
 
   //Déclaratino des composants
   constructor(private formBuilder: FormBuilder,
@@ -40,7 +40,7 @@ export class RegisterComponent implements OnInit {
   }
 
   //Mathode d'inscription
-  onSignup() {
+  private onSignup() {
     this.loading = true;
     this.part = 3;
 
