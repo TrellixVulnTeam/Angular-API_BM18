@@ -1,0 +1,411 @@
+<?xml version='1.0'?>
+<testExecutions version='1'>
+    <file path='src/app/_services/user.service.spec.ts'>
+        <testCase name='UserService can load instance' duration='47'/>
+        <testCase name='UserService can load instance' duration='10'/>
+        <testCase name='UserService can load instance' duration='18'/>
+    </file>
+    <file path='src/app/app-routing.module.spec.ts'>
+        <testCase name='AppRoutingModule can load instance' duration='28'/>
+        <testCase name='AppRoutingModule can load instance' duration='6'/>
+        <testCase name='AppRoutingModule can load instance' duration='6'/>
+    </file>
+    <file path='src/app/stuff/stuff-list/stuff-list.component.spec.ts'>
+        <testCase name='StuffListComponent ngOnInit makes expected calls' duration='71'/>
+        <testCase name='StuffListComponent can load instance' duration='21'/>
+        <testCase name='StuffListComponent ngOnInit makes expected calls' duration='25'/>
+        <testCase name='StuffListComponent can load instance' duration='8'/>
+        <testCase name='StuffListComponent can load instance' duration='21'/>
+        <testCase name='StuffListComponent ngOnInit makes expected calls' duration='8'/>
+    </file>
+    <file path='src/app/_services/auth.service.spec.ts'>
+        <testCase name='AuthService can load instance' duration='10'/>
+        <testCase name='AuthService can load instance' duration='12'/>
+        <testCase name='AuthService can load instance' duration='13'/>
+    </file>
+    <file path='src/app/user/user-stuff-list/user-stuff-list.component.spec.ts'>
+        <testCase name='UserStuffListComponent part has default value' duration='19'/>
+        <testCase name='UserStuffListComponent can load instance' duration='9'/>
+        <testCase name='UserStuffListComponent loading has default value' duration='5'/>
+        <testCase name='UserStuffListComponent ngOnInit makes expected calls' duration='3'/>
+        <testCase name='UserStuffListComponent part has default value' duration='25'/>
+        <testCase name='UserStuffListComponent loading has default value' duration='9'/>
+        <testCase name='UserStuffListComponent ngOnInit makes expected calls' duration='4'/>
+        <testCase name='UserStuffListComponent can load instance' duration='6'/>
+        <testCase name='UserStuffListComponent ngOnInit makes expected calls' duration='14'/>
+        <testCase name='UserStuffListComponent part has default value' duration='6'/>
+        <testCase name='UserStuffListComponent can load instance' duration='3'/>
+        <testCase name='UserStuffListComponent loading has default value' duration='4'/>
+    </file>
+    <file path='src/app/_services/state.service.spec.ts'>
+        <testCase name='StateService part has default value' duration='16'/>
+        <testCase name='StateService can load instance' duration='5'/>
+        <testCase name='StateService part has default value' duration='9'/>
+        <testCase name='StateService can load instance' duration='3'/>
+        <testCase name='StateService part has default value' duration='12'/>
+        <testCase name='StateService can load instance' duration='6'/>
+    </file>
+    <file path='src/app/_services/stuff.service.spec.ts'>
+        <testCase name='StuffService can load instance' duration='13'/>
+        <testCase name='StuffService can load instance' duration='12'/>
+        <testCase name='StuffService can load instance' duration='21'/>
+    </file>
+    <file path='src/app/_interceptors/auth-interceptor.spec.ts'>
+        <testCase name='AuthInterceptor intercept makes expected calls' duration='62'>
+            <failure message='TestCase failed'>Error: &lt;spyOn> : handle() method does not exist
+Usage: spyOn(&lt;object>, &lt;methodName>)
+Error: &lt;spyOn> : handle() method does not exist
+Usage: spyOn(&lt;object>, &lt;methodName>)
+    at &lt;Jasmine>
+    at UserContext.&lt;anonymous> (src/app/_interceptors/auth-interceptor.spec.ts:29:7)
+    at ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:372:1)
+    at ProxyZoneSpec.onInvoke (node_modules/zone.js/fesm2015/zone-testing.js:287:1)
+    at ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:371:1)
+    at Zone.run (node_modules/zone.js/fesm2015/zone.js:134:1)
+    at runInTestZone (node_modules/zone.js/fesm2015/zone-testing.js:567:1)
+    at UserContext.&lt;anonymous> (node_modules/zone.js/fesm2015/zone-testing.js:582:1)
+</failure>
+        </testCase>
+        <testCase name='AuthInterceptor can load instance' duration='9'/>
+        <testCase name='AuthInterceptor can load instance' duration='12'/>
+        <testCase name='AuthInterceptor intercept makes expected calls' duration='4'>
+            <failure message='TestCase failed'>Error: &lt;spyOn> : handle() method does not exist
+Usage: spyOn(&lt;object>, &lt;methodName>)
+Error: &lt;spyOn> : handle() method does not exist
+Usage: spyOn(&lt;object>, &lt;methodName>)
+    at &lt;Jasmine>
+    at UserContext.&lt;anonymous> (src/app/_interceptors/auth-interceptor.spec.ts:29:7)
+    at ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:372:1)
+    at ProxyZoneSpec.onInvoke (node_modules/zone.js/fesm2015/zone-testing.js:287:1)
+    at ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:371:1)
+    at Zone.run (node_modules/zone.js/fesm2015/zone.js:134:1)
+    at runInTestZone (node_modules/zone.js/fesm2015/zone-testing.js:567:1)
+    at UserContext.&lt;anonymous> (node_modules/zone.js/fesm2015/zone-testing.js:582:1)
+</failure>
+        </testCase>
+        <testCase name='AuthInterceptor can load instance' duration='42'/>
+        <testCase name='AuthInterceptor intercept makes expected calls' duration='10'>
+            <failure message='TestCase failed'>Error: &lt;spyOn> : handle() method does not exist
+Usage: spyOn(&lt;object>, &lt;methodName>)
+Error: &lt;spyOn> : handle() method does not exist
+Usage: spyOn(&lt;object>, &lt;methodName>)
+    at &lt;Jasmine>
+    at UserContext.&lt;anonymous> (src/app/_interceptors/auth-interceptor.spec.ts:29:7)
+    at ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:372:1)
+    at ProxyZoneSpec.onInvoke (node_modules/zone.js/fesm2015/zone-testing.js:287:1)
+    at ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:371:1)
+    at Zone.run (node_modules/zone.js/fesm2015/zone.js:134:1)
+    at runInTestZone (node_modules/zone.js/fesm2015/zone-testing.js:567:1)
+    at UserContext.&lt;anonymous> (node_modules/zone.js/fesm2015/zone-testing.js:582:1)
+</failure>
+        </testCase>
+    </file>
+    <file path='src/app/home/home.component.spec.ts'>
+        <testCase name='HomeComponent Home - 3 - Vérification de la variable title' duration='25'/>
+        <testCase name='HomeComponent Home - 2 - Vérification du chemin de l&apos;icone Polytech Tours' duration='15'/>
+        <testCase name='HomeComponent Home - 1 - Charger la page d&apos;accueil' duration='4'/>
+        <testCase name='HomeComponent Home - 5 - Vérification de la balise h2 de la page d&apos;accueil de Polytech Tours' duration='6'/>
+        <testCase name='HomeComponent Home - 4 - Vérification de la balise h1 du bandeau de la page d&apos;accueil' duration='4'/>
+        <testCase name='HomeComponent Home - 1 - Charger la page d&apos;accueil' duration='16'/>
+        <testCase name='HomeComponent Home - 2 - Vérification du chemin de l&apos;icone Polytech Tours' duration='5'/>
+        <testCase name='HomeComponent Home - 5 - Vérification de la balise h2 de la page d&apos;accueil de Polytech Tours' duration='6'/>
+        <testCase name='HomeComponent Home - 3 - Vérification de la variable title' duration='7'/>
+        <testCase name='HomeComponent Home - 4 - Vérification de la balise h1 du bandeau de la page d&apos;accueil' duration='6'/>
+        <testCase name='HomeComponent Home - 1 - Charger la page d&apos;accueil' duration='51'/>
+        <testCase name='HomeComponent Home - 4 - Vérification de la balise h1 du bandeau de la page d&apos;accueil' duration='15'/>
+        <testCase name='HomeComponent Home - 5 - Vérification de la balise h2 de la page d&apos;accueil de Polytech Tours' duration='5'/>
+        <testCase name='HomeComponent Home - 2 - Vérification du chemin de l&apos;icone Polytech Tours' duration='5'/>
+        <testCase name='HomeComponent Home - 3 - Vérification de la variable title' duration='3'/>
+    </file>
+    <file path='src/app/_services/auth-guard.service.spec.ts'>
+        <testCase name='AuthGuard canActivate makes expected calls' duration='7'>
+            <failure message='TestCase failed'>Error: Expected spy navigate to have been called.
+    at &lt;Jasmine>
+    at UserContext.&lt;anonymous> (src/app/_services/auth-guard.service.spec.ts:38:35)
+    at ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:372:1)
+    at ProxyZoneSpec.onInvoke (node_modules/zone.js/fesm2015/zone-testing.js:287:1)
+</failure>
+        </testCase>
+        <testCase name='AuthGuard can load instance' duration='5'/>
+        <testCase name='AuthGuard canActivate makes expected calls' duration='80'>
+            <failure message='TestCase failed'>Error: Expected spy navigate to have been called.
+    at &lt;Jasmine>
+    at UserContext.&lt;anonymous> (src/app/_services/auth-guard.service.spec.ts:38:35)
+    at ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:372:1)
+    at ProxyZoneSpec.onInvoke (node_modules/zone.js/fesm2015/zone-testing.js:287:1)
+</failure>
+        </testCase>
+        <testCase name='AuthGuard can load instance' duration='24'/>
+        <testCase name='AuthGuard can load instance' duration='7'/>
+        <testCase name='AuthGuard canActivate makes expected calls' duration='5'>
+            <failure message='TestCase failed'>Error: Expected spy navigate to have been called.
+    at &lt;Jasmine>
+    at UserContext.&lt;anonymous> (src/app/_services/auth-guard.service.spec.ts:38:35)
+    at ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:372:1)
+    at ProxyZoneSpec.onInvoke (node_modules/zone.js/fesm2015/zone-testing.js:287:1)
+</failure>
+        </testCase>
+    </file>
+    <file path='src/app/header/header.component.spec.ts'>
+        <testCase name='HeaderComponent onLogout makes expected calls' duration='14'/>
+        <testCase name='HeaderComponent can load instance' duration='9'/>
+        <testCase name='HeaderComponent onBackToParts makes expected calls' duration='4'/>
+        <testCase name='HeaderComponent onBackToParts makes expected calls' duration='26'/>
+        <testCase name='HeaderComponent can load instance' duration='15'/>
+        <testCase name='HeaderComponent onLogout makes expected calls' duration='7'/>
+        <testCase name='HeaderComponent can load instance' duration='38'/>
+        <testCase name='HeaderComponent onLogout makes expected calls' duration='13'/>
+        <testCase name='HeaderComponent onBackToParts makes expected calls' duration='4'/>
+    </file>
+    <file path='src/app/stuff/new-thing-with-upload/new-thing-with-upload.component.spec.ts'>
+        <testCase name='NewThingWithUploadComponent can load instance' duration='18'/>
+        <testCase name='NewThingWithUploadComponent loading has default value' duration='9'/>
+        <testCase name='NewThingWithUploadComponent onSubmit makes expected calls' duration='3'>
+            <failure message='TestCase failed'>Error: Expected spy navigate to have been called.
+    at &lt;Jasmine>
+    at UserContext.&lt;anonymous> (src/app/stuff/new-thing-with-upload/new-thing-with-upload.component.spec.ts:66:35)
+    at ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:372:1)
+    at ProxyZoneSpec.onInvoke (node_modules/zone.js/fesm2015/zone-testing.js:287:1)
+</failure>
+        </testCase>
+        <testCase name='NewThingWithUploadComponent ngOnInit makes expected calls' duration='3'/>
+        <testCase name='NewThingWithUploadComponent ngOnInit makes expected calls' duration='66'/>
+        <testCase name='NewThingWithUploadComponent onSubmit makes expected calls' duration='23'>
+            <failure message='TestCase failed'>Error: Expected spy navigate to have been called.
+    at &lt;Jasmine>
+    at UserContext.&lt;anonymous> (src/app/stuff/new-thing-with-upload/new-thing-with-upload.component.spec.ts:66:35)
+    at ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:372:1)
+    at ProxyZoneSpec.onInvoke (node_modules/zone.js/fesm2015/zone-testing.js:287:1)
+</failure>
+        </testCase>
+        <testCase name='NewThingWithUploadComponent loading has default value' duration='4'/>
+        <testCase name='NewThingWithUploadComponent can load instance' duration='6'/>
+        <testCase name='NewThingWithUploadComponent ngOnInit makes expected calls' duration='48'/>
+        <testCase name='NewThingWithUploadComponent loading has default value' duration='16'/>
+        <testCase name='NewThingWithUploadComponent can load instance' duration='3'/>
+        <testCase name='NewThingWithUploadComponent onSubmit makes expected calls' duration='4'>
+            <failure message='TestCase failed'>Error: Expected spy navigate to have been called.
+    at &lt;Jasmine>
+    at UserContext.&lt;anonymous> (src/app/stuff/new-thing-with-upload/new-thing-with-upload.component.spec.ts:66:35)
+    at ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:372:1)
+    at ProxyZoneSpec.onInvoke (node_modules/zone.js/fesm2015/zone-testing.js:287:1)
+</failure>
+        </testCase>
+    </file>
+    <file path='src/app/user/single-user/single-user.component.spec.ts'>
+        <testCase name='SingleUserComponent can load instance' duration='11'/>
+        <testCase name='SingleUserComponent onModify makes expected calls' duration='9'/>
+        <testCase name='SingleUserComponent ngOnInit makes expected calls' duration='4'/>
+        <testCase name='SingleUserComponent can load instance' duration='22'/>
+        <testCase name='SingleUserComponent ngOnInit makes expected calls' duration='5'/>
+        <testCase name='SingleUserComponent onModify makes expected calls' duration='5'/>
+        <testCase name='SingleUserComponent ngOnInit makes expected calls' duration='45'/>
+        <testCase name='SingleUserComponent onModify makes expected calls' duration='8'/>
+        <testCase name='SingleUserComponent can load instance' duration='3'/>
+    </file>
+    <file path='src/app/stuff/single-thing/single-thing.component.spec.ts'>
+        <testCase name='SingleThingComponent onDelete makes expected calls' duration='19'>
+            <failure message='TestCase failed'>Error: Expected spy navigate to have been called.
+    at &lt;Jasmine>
+    at UserContext.&lt;anonymous> (src/app/stuff/single-thing/single-thing.component.spec.ts:106:35)
+    at ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:372:1)
+    at ProxyZoneSpec.onInvoke (node_modules/zone.js/fesm2015/zone-testing.js:287:1)
+</failure>
+        </testCase>
+        <testCase name='SingleThingComponent onGoBack makes expected calls' duration='12'/>
+        <testCase name='SingleThingComponent clickMethod makes expected calls' duration='16871'/>
+        <testCase name='SingleThingComponent can load instance' duration='8'/>
+        <testCase name='SingleThingComponent ngOnInit makes expected calls' duration='7'>
+            <failure message='TestCase failed'>Error: Expected spy group to have been called.
+    at &lt;Jasmine>
+    at UserContext.&lt;anonymous> (src/app/stuff/single-thing/single-thing.component.spec.ts:61:37)
+    at ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:372:1)
+    at ProxyZoneSpec.onInvoke (node_modules/zone.js/fesm2015/zone-testing.js:287:1)
+</failure>
+        </testCase>
+        <testCase name='SingleThingComponent onModify makes expected calls' duration='22'/>
+        <testCase name='SingleThingComponent onReserv makes expected calls' duration='8'>
+            <failure message='TestCase failed'>Error: Expected spy navigate to have been called.
+    at &lt;Jasmine>
+    at UserContext.&lt;anonymous> (src/app/stuff/single-thing/single-thing.component.spec.ts:74:35)
+    at ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:372:1)
+    at ProxyZoneSpec.onInvoke (node_modules/zone.js/fesm2015/zone-testing.js:287:1)
+</failure>
+        </testCase>
+        <testCase name='SingleThingComponent clickMethod makes expected calls' duration='1100'/>
+        <testCase name='SingleThingComponent ngOnInit makes expected calls' duration='18'>
+            <failure message='TestCase failed'>Error: Expected spy group to have been called.
+    at &lt;Jasmine>
+    at UserContext.&lt;anonymous> (src/app/stuff/single-thing/single-thing.component.spec.ts:61:37)
+    at ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:372:1)
+    at ProxyZoneSpec.onInvoke (node_modules/zone.js/fesm2015/zone-testing.js:287:1)
+</failure>
+        </testCase>
+        <testCase name='SingleThingComponent onDelete makes expected calls' duration='12'>
+            <failure message='TestCase failed'>Error: Expected spy navigate to have been called.
+    at &lt;Jasmine>
+    at UserContext.&lt;anonymous> (src/app/stuff/single-thing/single-thing.component.spec.ts:106:35)
+    at ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:372:1)
+    at ProxyZoneSpec.onInvoke (node_modules/zone.js/fesm2015/zone-testing.js:287:1)
+</failure>
+        </testCase>
+        <testCase name='SingleThingComponent onReserv makes expected calls' duration='8'>
+            <failure message='TestCase failed'>Error: Expected spy navigate to have been called.
+    at &lt;Jasmine>
+    at UserContext.&lt;anonymous> (src/app/stuff/single-thing/single-thing.component.spec.ts:74:35)
+    at ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:372:1)
+    at ProxyZoneSpec.onInvoke (node_modules/zone.js/fesm2015/zone-testing.js:287:1)
+</failure>
+        </testCase>
+        <testCase name='SingleThingComponent onGoBack makes expected calls' duration='6'/>
+        <testCase name='SingleThingComponent onModify makes expected calls' duration='4'/>
+        <testCase name='SingleThingComponent can load instance' duration='5'/>
+        <testCase name='SingleThingComponent can load instance' duration='39'/>
+        <testCase name='SingleThingComponent onGoBack makes expected calls' duration='9'/>
+        <testCase name='SingleThingComponent onDelete makes expected calls' duration='3'>
+            <failure message='TestCase failed'>Error: Expected spy navigate to have been called.
+    at &lt;Jasmine>
+    at UserContext.&lt;anonymous> (src/app/stuff/single-thing/single-thing.component.spec.ts:106:35)
+    at ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:372:1)
+    at ProxyZoneSpec.onInvoke (node_modules/zone.js/fesm2015/zone-testing.js:287:1)
+</failure>
+        </testCase>
+        <testCase name='SingleThingComponent onModify makes expected calls' duration='3'/>
+    </file>
+    <file path='src/app/stuff/modify-thing-with-upload/modify-thing-with-upload.component.spec.ts'>
+        <testCase name='ModifyThingWithUploadComponent can load instance' duration='19'/>
+        <testCase name='ModifyThingWithUploadComponent loading has default value' duration='6'/>
+        <testCase name='ModifyThingWithUploadComponent onSubmit makes expected calls' duration='5'>
+            <failure message='TestCase failed'>Error: Expected spy navigate to have been called.
+    at &lt;Jasmine>
+    at UserContext.&lt;anonymous> (src/app/stuff/modify-thing-with-upload/modify-thing-with-upload.component.spec.ts:75:35)
+    at ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:372:1)
+    at ProxyZoneSpec.onInvoke (node_modules/zone.js/fesm2015/zone-testing.js:287:1)
+</failure>
+        </testCase>
+        <testCase name='ModifyThingWithUploadComponent ngOnInit makes expected calls' duration='4'>
+            <failure message='TestCase failed'>Error: Expected spy group to have been called.
+    at &lt;Jasmine>
+    at UserContext.&lt;anonymous> (src/app/stuff/modify-thing-with-upload/modify-thing-with-upload.component.spec.ts:60:37)
+    at ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:372:1)
+    at ProxyZoneSpec.onInvoke (node_modules/zone.js/fesm2015/zone-testing.js:287:1)
+</failure>
+        </testCase>
+        <testCase name='ModifyThingWithUploadComponent ngOnInit makes expected calls' duration='28'>
+            <failure message='TestCase failed'>Error: Expected spy group to have been called.
+    at &lt;Jasmine>
+    at UserContext.&lt;anonymous> (src/app/stuff/modify-thing-with-upload/modify-thing-with-upload.component.spec.ts:60:37)
+    at ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:372:1)
+    at ProxyZoneSpec.onInvoke (node_modules/zone.js/fesm2015/zone-testing.js:287:1)
+</failure>
+        </testCase>
+        <testCase name='ModifyThingWithUploadComponent loading has default value' duration='8'/>
+        <testCase name='ModifyThingWithUploadComponent onSubmit makes expected calls' duration='4'>
+            <failure message='TestCase failed'>Error: Expected spy navigate to have been called.
+    at &lt;Jasmine>
+    at UserContext.&lt;anonymous> (src/app/stuff/modify-thing-with-upload/modify-thing-with-upload.component.spec.ts:75:35)
+    at ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:372:1)
+    at ProxyZoneSpec.onInvoke (node_modules/zone.js/fesm2015/zone-testing.js:287:1)
+</failure>
+        </testCase>
+        <testCase name='ModifyThingWithUploadComponent can load instance' duration='3'/>
+        <testCase name='ModifyThingWithUploadComponent onSubmit makes expected calls' duration='22'>
+            <failure message='TestCase failed'>Error: Expected spy navigate to have been called.
+    at &lt;Jasmine>
+    at UserContext.&lt;anonymous> (src/app/stuff/modify-thing-with-upload/modify-thing-with-upload.component.spec.ts:75:35)
+    at ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:372:1)
+    at ProxyZoneSpec.onInvoke (node_modules/zone.js/fesm2015/zone-testing.js:287:1)
+</failure>
+        </testCase>
+        <testCase name='ModifyThingWithUploadComponent loading has default value' duration='10'/>
+        <testCase name='ModifyThingWithUploadComponent can load instance' duration='2'/>
+        <testCase name='ModifyThingWithUploadComponent ngOnInit makes expected calls' duration='3'>
+            <failure message='TestCase failed'>Error: Expected spy group to have been called.
+    at &lt;Jasmine>
+    at UserContext.&lt;anonymous> (src/app/stuff/modify-thing-with-upload/modify-thing-with-upload.component.spec.ts:60:37)
+    at ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:372:1)
+    at ProxyZoneSpec.onInvoke (node_modules/zone.js/fesm2015/zone-testing.js:287:1)
+</failure>
+        </testCase>
+    </file>
+    <file path='src/app/login/login.component.spec.ts'>
+        <testCase name='LoginComponent Login - 1 - Vérification de la création du composant login' duration='17'/>
+        <testCase name='LoginComponent Login - 3 - Vérification de la fonction ngOnInit makes expected calls' duration='7'/>
+        <testCase name='LoginComponent Login - 2 - Vérification du chargement du module' duration='3'/>
+        <testCase name='LoginComponent Login - 4 - Vérification de la fonction onLogin makes expected calls' duration='5'>
+            <failure message='TestCase failed'>Error: Expected spy navigate to have been called.
+    at &lt;Jasmine>
+    at UserContext.&lt;anonymous> (src/app/login/login.component.spec.ts:70:35)
+    at ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:372:1)
+    at ProxyZoneSpec.onInvoke (node_modules/zone.js/fesm2015/zone-testing.js:287:1)
+</failure>
+        </testCase>
+        <testCase name='LoginComponent Login - 3 - Vérification de la fonction ngOnInit makes expected calls' duration='10'/>
+        <testCase name='LoginComponent Login - 4 - Vérification de la fonction onLogin makes expected calls' duration='3'>
+            <failure message='TestCase failed'>Error: Expected spy navigate to have been called.
+    at &lt;Jasmine>
+    at UserContext.&lt;anonymous> (src/app/login/login.component.spec.ts:70:35)
+    at ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:372:1)
+    at ProxyZoneSpec.onInvoke (node_modules/zone.js/fesm2015/zone-testing.js:287:1)
+</failure>
+        </testCase>
+        <testCase name='LoginComponent Login - 1 - Vérification de la création du composant login' duration='3'/>
+        <testCase name='LoginComponent Login - 2 - Vérification du chargement du module' duration='2'/>
+        <testCase name='LoginComponent Login - 3 - Vérification de la fonction ngOnInit makes expected calls' duration='115'/>
+        <testCase name='LoginComponent Login - 4 - Vérification de la fonction onLogin makes expected calls' duration='81'>
+            <failure message='TestCase failed'>Error: Expected spy navigate to have been called.
+    at &lt;Jasmine>
+    at UserContext.&lt;anonymous> (src/app/login/login.component.spec.ts:70:35)
+    at ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:372:1)
+    at ProxyZoneSpec.onInvoke (node_modules/zone.js/fesm2015/zone-testing.js:287:1)
+</failure>
+        </testCase>
+        <testCase name='LoginComponent Login - 2 - Vérification du chargement du module' duration='6'/>
+        <testCase name='LoginComponent Login - 1 - Vérification de la création du composant login' duration='4'/>
+    </file>
+    <file path='src/app/user/user.component.spec.ts'>
+        <testCase name='UserComponent can load instance' duration='22'/>
+        <testCase name='UserComponent can load instance' duration='14'/>
+        <testCase name='UserComponent can load instance' duration='23'/>
+    </file>
+    <file path='src/app/user/modify-user/modify-user.component.spec.ts'>
+        <testCase name='ModifyUserComponent loading has default value' duration='15'/>
+        <testCase name='ModifyUserComponent can load instance' duration='6'/>
+        <testCase name='ModifyUserComponent onSubmit makes expected calls' duration='3'>
+            <failure message='TestCase failed'>Error: Expected spy navigate to have been called.
+    at &lt;Jasmine>
+    at UserContext.&lt;anonymous> (src/app/user/modify-user/modify-user.component.spec.ts:74:35)
+    at ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:372:1)
+    at ProxyZoneSpec.onInvoke (node_modules/zone.js/fesm2015/zone-testing.js:287:1)
+</failure>
+        </testCase>
+        <testCase name='ModifyUserComponent ngOnInit makes expected calls' duration='6'/>
+        <testCase name='ModifyUserComponent ngOnInit makes expected calls' duration='12'/>
+        <testCase name='ModifyUserComponent loading has default value' duration='6'/>
+        <testCase name='ModifyUserComponent can load instance' duration='2'/>
+        <testCase name='ModifyUserComponent onSubmit makes expected calls' duration='5'>
+            <failure message='TestCase failed'>Error: Expected spy navigate to have been called.
+    at &lt;Jasmine>
+    at UserContext.&lt;anonymous> (src/app/user/modify-user/modify-user.component.spec.ts:74:35)
+    at ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:372:1)
+    at ProxyZoneSpec.onInvoke (node_modules/zone.js/fesm2015/zone-testing.js:287:1)
+</failure>
+        </testCase>
+        <testCase name='ModifyUserComponent can load instance' duration='14'/>
+        <testCase name='ModifyUserComponent loading has default value' duration='6'/>
+        <testCase name='ModifyUserComponent ngOnInit makes expected calls' duration='2'/>
+        <testCase name='ModifyUserComponent onSubmit makes expected calls' duration='4'>
+            <failure message='TestCase failed'>Error: Expected spy navigate to have been called.
+    at &lt;Jasmine>
+    at UserContext.&lt;anonymous> (src/app/user/modify-user/modify-user.component.spec.ts:74:35)
+    at ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:372:1)
+    at ProxyZoneSpec.onInvoke (node_modules/zone.js/fesm2015/zone-testing.js:287:1)
+</failure>
+        </testCase>
+    </file>
+    <file path='src/app/stuff/stuff.component.spec.ts'>
+        <testCase name='StuffComponent can load instance' duration='16'/>
+        <testCase name='StuffComponent can load instance' duration='25'/>
+        <testCase name='StuffComponent can load instance' duration='30'/>
+    </file>
+</testExecutions>
